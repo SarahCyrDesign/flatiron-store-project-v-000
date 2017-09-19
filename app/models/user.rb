@@ -6,8 +6,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def current_cart
-    self.carts.last
-  end
 
 end
